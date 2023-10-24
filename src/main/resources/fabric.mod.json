@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "enchantmentpreview",
+	"id": "enchantmentpreviews",
 	"version": "${version}",
-	"name": "EnchantmentPreview",
+	"name": "EnchantmentPreviews",
 	"description": "Adds previews of which enchantments can be added to items in tooltips",
 	"authors": [
 		"surge"
@@ -12,19 +12,19 @@
 		"sources": "https://github.com/Wolfsurge/EnchantmentPreview"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/enchantmentpreview/icon.png",
+	"icon": "assets/enchantmentpreviews/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"client": [
 			{
-				"value": "me.surge.EnchantmentPreviewClient",
+				"value": "me.surge.EnchantmentPreviewsClient",
 				"adapter": "kotlin"
 			}
 		]
 	},
 	"mixins": [
 		{
-			"config": "enchantmentpreview.client.mixins.json",
+			"config": "enchantmentpreviews.client.mixins.json",
 			"environment": "client"
 		}
 	],
@@ -32,7 +32,6 @@
 		"fabricloader": ">=0.14.23",
 		"minecraft": "~1.20.2",
 		"java": ">=17",
-		"fabric-api": "*",
 		"fabric-language-kotlin": ">=1.9.10"
 	},
 	"suggests": {}
